@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>Check Progress</title>
+                    {%-include 'header.html' %}
+                    <style>
+                                        body {
+                                        
+                                        background: linear-gradient(to bottom, #8e44ad, #3498db);
+                                        background-size: cover;
+                                        
+                                        color: white;
+                                        background-repeat: no-repeat;
+                                        background-size: cover;
+                                        }
+                                        .opaque-box {
+                                        margin-left: 7vh;
+                                        /*display: flex;*/
+                                        height: 80vh;
+                                        width: 165vh;
+                                        /*justify-content: center;
+                                        align-items: center;*/
+                                        font-family: monospace;
+                                        background-color: rgba(0, 0, 0, 0.7);
+                                        color: white;       
+                                        border-radius: 10px;
+                                        /*text-align: center;*/
+                                        font-weight: bolder;
+                                        }
+                                        label {
+                                        font-size: 24px;
+                                        margin-bottom: 10px;
+                                        padding-left: 10%;
+                                        }
+                    </style>
+</head>
+<body>
+                    
+        <div class="opaque-box">
+            <div style="font-size: xx-large;text-align: center;">REPORT<br/><br/></div>
+                <form>
+                    <label>Result: </label>
+                    <label>Classification {{ pred+1 }}</label>
+                </form>
+                <br/>
+                <p><p> &ensp; The 5 classifications of Alzheimer's Disease are: </p>
+                <br/>
+                    <p> &emsp; 1. CN (Cognitively Normal) : &emsp;Subjects at the CN stage have typical aging symptoms with no evidence of depression or dementia.</p>
+                    <p> &emsp; 2. MCI (Mild cognitive impairment) : &emsp;EMCI, MCI, and LMCI are the phases at which the disease has advanced and begun to impact daily life &emsp;&ensp;&ensp;&emsp;&emsp;&ensp;&ensp;&nbsp;&ensp;activities. The patient experiences speech difficulties, motor function loss, memory issues, and difficulty in reading and writing.</p>
+                    <p> &emsp; 3. EMCI (Early Mild Cognitive Impairment) :  &emsp;Patients with MCI are more prone to acquire Alzheimer's disease</p>
+                    <p> &emsp; 4. LMCI (Late Mild Cognitive Impairment) :   &emsp;EMCI, MCI, and LMCI are the phases at which the disease has advanced and begun to impact daily life &emsp;&ensp;&ensp;&ensp; activities. The patient experiences speech difficulties, motor function loss, memory issues, and difficulty in reading and writing.</p>
+                    <p> &emsp; 5. AD (Alzheimer disease) : &emsp;Alzheimer's disease (AD) is an irremediable, progressive neurological syndrome leading to the deterioration of  &emsp;&ensp;&ensp;&ensp; &emsp;&ensp;&ensp;&ensp;cognitive abilities.AD is the last stage in which the patient is entirely dependent on caretakers. Although AD is not the cause of death, &emsp;&ensp;&ensp;&ensp; &emsp;&ensp;&ensp;&ensp; however, it triggers other psychiatric diseases ultimately leading to death.</p>
+                </p>
+            </div>
+            <div></div>
+            <div style="background: linear-gradient(to top, #8e44ad, #3498db);">
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>         
+             </div>
+</body>
+</html>

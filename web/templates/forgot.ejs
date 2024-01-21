@@ -1,0 +1,181 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Change</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #eaf3f3; /* Pale blue */
+            /* background-color: #e0f6ef; / / Pale green */
+        }
+
+        .container {
+            background-color: rgba(255, 255, 255, 0.8); /* Opaque white background */
+            padding: 20px;
+            border-radius: 5px;
+            text-align: center;
+            max-width: 400px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .form-group label {
+            font-size: 20px;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        .form-group input {
+            width: 100%;
+            height: 30px;
+            padding: 6px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 18px;
+        }
+
+        .btn {
+            background-color: #007bff; /* Blue button color */
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 20px;
+        }
+
+        /* Style for the form submission message */
+        .message {
+            font-size: 18px;
+            color: #007bff;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <label id="name">{}</label>
+        </div>
+        <div class="form-group">
+            <label for="newPassword">New Password:</label>
+            <input type="password" id="newPassword" name="newPassword" required>
+        </div>
+        <div class="form-group">
+            <label for="confirmNewPassword">Confirm New Password:</label>
+            <input type="password" id="confirmNewPassword" name="confirmNewPassword" required>
+        </div>
+        <input type="submit" class="btn" value="Submit">
+    </div>
+</body>
+
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Page</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #eaf3f3; /* Pale blue */
+            background: linear-gradient(to bottom, #8e44ad, #3498db);
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+        }
+
+        .container {
+            width: 400px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            background-color: #fff;
+            border-radius: 5px;
+            text-align: center;
+            /*background-image: url('https://i.pinimg.com/564x/30/9c/5c/309c5c92dbe5e1266daedae409c91e74.jpg');*/
+            opacity: 0.8;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            font-family: monospace;
+            font-weight: bolder;
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+
+        .form-group input {
+            width: 87%;
+            font-family: monospace;
+            font-weight: bolder;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            background-color:#E1AEFF;
+        }
+
+        .btn {
+            background-color: #007bff; /* Blue button color */
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .btn.signup-btn {
+            background-color: #9336B4; /* Blue button color for signup */
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Forgot Password</h1>
+        <form action="/forgot" method="post">
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="password">New Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form-group">
+                <label for="confirm-password">Confirm new Password</label>
+                <input type="password" id="confirm-password" name="confirmpassword" required>
+            </div>
+            <button type="submit" class="btn signup-btn">Submit</button>
+            
+        </form> 
+    </div>
+</body>
+</html>
